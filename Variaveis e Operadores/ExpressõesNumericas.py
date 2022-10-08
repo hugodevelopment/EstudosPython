@@ -11,14 +11,18 @@ print(expressao)
 # 1º Operador é a potência(**), 2º multplicação(*) e divisão(%) (inteira / ou decimal //) e 3º soma(+) e subtração (-)
 
 # Ex1: Qual é o valor da expressão abaixo? 
-expressão1 = 16 - 2 * 5 / 3 + 1
+expressão1 = 16 - 2 * 5 // 3 + 1
 
+# 1º Fazemos a multiplicação por aparecer antes lendo a equação da esquerda para a direita
 Operação_1 =  (2 * 5)
+# 2º Fazemos a divisão após realizar a multiplicação (2*5) que chamamos de operação_1
 Operação_2 =  (Operação_1 // 3)
+# 3º  Após fazer a divisão subtraimos de 16 por ser mais a esquerda
 Operação_3 =  (16 - Operação_2)
+# 4º Para finalizar somamos a operação_3 com o 1 e chamamos de operaçã0_4
 Operação_4 = Operação_3 + 1
-print(Operação_4)
+print("Nosso calculo", Operação_4)
 
 
-print(expressão1)
+print("Resultado expressão",expressão1)
 
