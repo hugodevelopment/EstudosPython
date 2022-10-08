@@ -31,11 +31,15 @@ print("-------------------------------------------- Exercicio 2 ----------------
 # Ex: 2 Qual é o valor da expressão abaixo?
 expressão_2 = 2 ** 2 ** 3 * 3
 
+# Na pontenciação primeiro resolvemos o que esta mais para direita
 op_1 = (2**3)
+# Depois elevamos 2 pelo resultado da op_1
 op_2 = (2**op_1)
+# Para finalizar multiplicamos op_2 por 3
 op_3 = (op_2*3)
 
-print(expressão_2)
+print("Nosso cálculo",op_3)
+print("Resposta do exercicio",expressão_2)
 
 
 
