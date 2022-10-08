@@ -24,6 +24,19 @@ Operação_4 = Operação_3 + 1
 # 5º Printando nosso resultado
 print("Nosso calculo", Operação_4)
 
-
 print("Resultado expressão",expressão1)
+
+print("-------------------------------------------- Exercicio 2 -----------------------------------------------------")
+
+# Ex: 2 Qual é o valor da expressão abaixo?
+expressão_2 = 2 ** 2 ** 3 * 3
+
+op_1 = (2**3)
+op_2 = (2**op_1)
+op_3 = (op_2*3)
+
+print(expressão_2)
+
+
+
 
