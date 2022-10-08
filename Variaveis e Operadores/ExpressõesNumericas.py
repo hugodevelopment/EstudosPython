@@ -21,6 +21,7 @@ Operação_2 =  (Operação_1 // 3)
 Operação_3 =  (16 - Operação_2)
 # 4º Para finalizar somamos a operação_3 com o 1 e chamamos de operaçã0_4
 Operação_4 = Operação_3 + 1
+# 5º Printando nosso resultado
 print("Nosso calculo", Operação_4)
 
 
