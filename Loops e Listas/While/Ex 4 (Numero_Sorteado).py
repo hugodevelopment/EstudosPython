@@ -4,7 +4,8 @@
 import random
 
 numero_magico = random.randint(0,100)
-print(numero_magico)
+# print(numero_magico)
+
 
 
 while True:
@@ -12,8 +13,11 @@ while True:
         if numero_user == numero_magico:
             print("Você acertou, parabéns")
             break
+        else:
+            print("Voce não acertou dessa vez")
         opcao = int(input("Digite 1 para sair ou qualquer para continuar"))
         if opcao == 1:
+            print("O numero magico era:", numero_magico)
             break
 
         
