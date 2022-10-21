@@ -8,4 +8,4 @@ count = 1
 while count <= numero_user:
     if(count % 2 == 0):
        print("Os numeros pares são", count)
-    count+=1      
+    count+=1    

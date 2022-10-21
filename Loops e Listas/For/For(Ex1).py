@@ -13,10 +13,9 @@
 # a3 = a2 + r = 4 + 3 = 7
 # a4 = a3 + r = 7 + 3 = 10
 
-
-
 r = 3
 
+# Criando um loop para fazer os cálculos automaticamente, começa do 2 pq 1 é igual a 0
 for i in range (2):
     a1 = 0
     if(i == 1):
