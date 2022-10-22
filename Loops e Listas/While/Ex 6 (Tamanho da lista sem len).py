@@ -17,23 +17,20 @@
 # print(nums) 
 
 
-
+nums = []
 def lista(valores):
-    nums = []
-    i=0
-    while True:
-        valores = int(input("Insira um número inteiro: "))
-        if valores == -1:
-            break
-        else:
-            nums.append(valores)
-            i += 1
+    nums.append(valores) 
+    print("A lista tem tamanho:", len(nums))
+    return (len(nums))
 
-    print("o tamanho da lista é", i) 
-    print("com len", len(nums))
-    print(nums) 
 
-lista()
-   
+while True:
+     # Pede ao usuário uma entrada e a armazena em uma variável como número inteiro.
+    valores = int(input("Insira um número inteiro: "))
+    if valores == -1:
+        print(nums)
+        break
+    else:
+        lista(valores)
 
 
