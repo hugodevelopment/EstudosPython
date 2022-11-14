@@ -20,7 +20,6 @@ for i in range(len(alunos)):
    situação(media, alunos[i]) 
 
 
-
 for i in alunos:
-    soma = Notas + Notas2
+    soma = Notas[i] + Notas2[i]
     print(soma)

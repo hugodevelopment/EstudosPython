@@ -18,6 +18,19 @@ for i in lista:
 def sempre_1(x):
     return x**2 - (x-1)*(x+1)
 
+# Iterando a lista com a função
 for i in lista:
     sempre_1(i)
-    print(sempre_1(i))
+    # print(sempre_1(i))
+
+# Acessando elementos:
+# How do I access the index while iterating over a sequence with a for loop?
+
+# item #1 = 8
+# item #2 = 23
+# item #3 = 45
+
+# Acessando itens com enemurate para criar um indez
+list = [8, 23, 45]
+for index, i in enumerate(list):
+    print(index, i)
