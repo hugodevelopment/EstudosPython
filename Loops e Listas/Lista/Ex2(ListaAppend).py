@@ -10,3 +10,5 @@ def dobro(lista):
 
 lista = [1, 4, 9, 20]
 print(dobro(lista))
+
+
