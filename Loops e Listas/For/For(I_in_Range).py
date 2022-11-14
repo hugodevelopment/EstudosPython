@@ -30,7 +30,13 @@ for i in lista:
 # item #2 = 23
 # item #3 = 45
 
-# Acessando itens com enemurate para criar um indez
+# Acessando itens com enemurate para criar um index
 list = [8, 23, 45]
 for index, i in enumerate(list):
     print(index, i)
+
+# frase = "Hugo"
+# frase2 = ""
+# for i in frase:
+#     frase2 += frase[::-1]
+# print("nome investido",frase2)
