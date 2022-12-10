@@ -14,10 +14,8 @@ def intervalo(dados):
             count += 1
         else:
             lista_dados2.append(i)
-    print(count)
     print("Fazem parte", lista_dados1)
-    print("Não fazem parte", lista_dados2)
-    return lista_dados1, lista_dados2         
+    print("Não fazem parte", lista_dados2)    
 
 dados = [8.28,8.22,8.29,8.25,8.26,8.26,8.26,8.23,8.30,8.27]
 print(intervalo(dados))
