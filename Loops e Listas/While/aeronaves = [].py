@@ -16,6 +16,7 @@ def menu(titulo, opcoes):
             if int(op) < len(opcoes):
                 # Chama a função do menu:
                 opcoes[int(op) - 1][1]()
+                print("tamanho",len(opcoes))
                 continue
         print("Opção inválida. \n\n")
 
@@ -37,7 +38,7 @@ def adicionar():
 
 def adicionar_aeronave():
     aeronaves.append(input("Nova aeronave: "))
-
+    print(aeronaves)
 
 def adicionar_aeroporto():
     aeroportos.append(input("Nova aeronave: "))
@@ -45,7 +46,10 @@ def adicionar_aeroporto():
     #...
 
 def listar():
-   ...
+    for i in adicionar_aeronave():
+        print(i)
+
+
 
 def procurar():
    ...
