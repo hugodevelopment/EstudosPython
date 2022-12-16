@@ -18,7 +18,7 @@ def subtração():
 
 # Aqui eu criei um while para repetir a função a quantidade que eu achasse melhor
 # i=0
-# while(i < 1):
+# while(cont):
 #     print("Escola uma opeação: 1 para soma e 2 para sub:")
 #     opção = int(input("qual operação:"))
 #     if opção == 1:
@@ -26,6 +26,7 @@ def subtração():
 #     else:
 #         print("a sub é", subtração())    
 #     i+=1  
+
 
 # Porém é melhor utilizar a estrutura While True e o usuário definir quando acabar
 while True:
