@@ -3,10 +3,7 @@
 # Tuples are used to store multiple items in a single variable.
 # Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
 
-# A tuple is a collection which is ordered and unchangeable.
-
-# Tuples are written with round brackets:
-
+# A tuple is a collection which is ordered and unchangeable. Tuples are written with round brackets:
 amigos = ("Adonai", "Marcio", "Fernanda", "Lucas", "Lucas")
 print(amigos)
 
@@ -22,9 +19,7 @@ print(amigos)
 gols = (1,)
 print(gols)
 
-
-print("--"*15)
-
+'---------------------------------------------------------------------------------------------------------------'
 print("Access itens")
 
 # We can access tuple items by referring to the index number, inside square brackets:
@@ -51,12 +46,11 @@ thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 print("Lembrando que o ultimo item não faz parte ", thistuple[:4])
 
 # By leaving out the end value, the range will go on to the end of the list:
-
-# Example
 # This example returns the items from "cherry" and to the end:
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
-print(thistuple[2:])
+print("começará do 2º item e irá até o final", thistuple[2:])
 
+# Neste caso o item 0 será o numero 1
 tuple = (1, (1, 2, 3))
 print(tuple[0])
 
