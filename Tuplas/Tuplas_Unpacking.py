@@ -28,8 +28,5 @@ def calc(x):
 
 # Utilizando o unpacking com os valores
 peri, area = calc(3)
-# print(peri)
-# print(area)
-
 for i in calc(3):
     print("valores da tupla", i)   
