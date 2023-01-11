@@ -27,6 +27,30 @@ for i in range(2):
     amigos1[nomes1[i]] = idade[i]
 #printando a lista e os dicionários 
 print(nomes1)
-print(amigos1)     
+print(amigos1) 
 
+
+"------------------------------------------------------------------------------------------------------------------------"
+# Utilizando o metodo uptaded
+
+dicio = {"naruto": 1, "Luffy":2}
+print(dicio)
+
+dicio2 = {"sasuke": 4, "Zoro":3}
+
+dicio.update(dicio2)
+print(dicio)
+
+
+# dicio = {}
+# def cadastro_dicio(x,y):
+#     dicio[x[i]] = y[i]
+#     print(dicio)
+
+
+# for i in range(2):
+#     nome = input("nome ")
+#     nota = input("nota ")
+#     cadastro_dicio(nome,nota)
+# print(dicio)    
 
