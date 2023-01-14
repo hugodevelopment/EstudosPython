@@ -2,7 +2,6 @@
 # Example:
 
 # Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.
-# Without list comprehension you will have to write a for statement with a conditional test inside:
 frutas = ["banana", "maça", "pera", "pessego", "kiwi", "mango"]
 
 nova_lista = []
@@ -15,9 +14,21 @@ def fruta(x):
     else:
         pass
 
+# Without list comprehension you will have to write a for statement with a conditional test inside:
 for i in frutas:
     fruta(i)
-print(nova_lista)    
+print("sem compressão da lista", nova_lista)    
 
-    
-    
+#Utilziando list comprenhesion: 
+nova_lista2 = [i for i in frutas if "a" in i]
+print("com compressão da lista", nova_lista2)
+
+# Sintax:
+# newlist = [expression for item in iterable if condition == True]
+
+# Exemplo para as frutas que não tem a 
+nova_lista3 = [i for i in frutas if "a" not in i]
+print(nova_lista3)
+
+Lista_até_5 = [i for i in range(10) if i < 5]
+print(Lista_até_5)
