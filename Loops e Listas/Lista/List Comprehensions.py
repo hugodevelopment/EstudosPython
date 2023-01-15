@@ -32,3 +32,13 @@ print(nova_lista3)
 
 Lista_até_5 = [i for i in range(10) if i < 5]
 print(Lista_até_5)
+
+
+valor = [1000, 2000, 5000, 4000, 6000]
+desconto = 200
+
+def desconto_preço(x):
+    return x - desconto
+
+produtos = [desconto_preço(i) for i in valor]
+print(produtos)
