@@ -19,7 +19,7 @@ for i in frutas:
     fruta(i)
 print("sem compressão da lista", nova_lista)    
 
-#Utilziando list comprenhesion: 
+#Utilizando list comprenhesion: 
 nova_lista2 = [i for i in frutas if "a" in i]
 print("com compressão da lista", nova_lista2)
 
