@@ -34,7 +34,21 @@ print("com lambda ", calcular_imposto(1000))
 
 # Aqui criamos uma lista onde para cada iteração a função lambda é chamada, neste cado i se torna x em cada iteração
 nova_lista = [lambda i = x: i * 0.5  for x in range(50,60)]
+imposto_lista = []
 for imposto in nova_lista:
     print(imposto())
+ 
+ 
+# No exemplo acima, criamos uma função lambda que classifica cada sublista da lista fornecida. 
+# Em seguida, essa lista é passada como parâmetro para a segunda função lambda, 
+# que retorna o elemento n-2 da lista classificada,  onde n é o comprimento da sublista.
+List = [[2,3,4],[1, 4, 16, 64],[3, 6, 9, 12]]
+
+# Sort each sublist
+sortList = lambda x: (sorted(i) for i in x)
+
+# Get the second largest element
+secondLargest = lambda x, f : [y[len(y)-2] for y in f(x)]
+res = secondLargest(List, sortList)
 
 
