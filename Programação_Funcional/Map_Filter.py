@@ -31,13 +31,61 @@ result = map(lambda x, y: x + y, numbers1, numbers2)
 print(list(result))
 
 
-
 # Exercicse Sololearn
 # You work on a payroll program.
 # Given a list of salaries, you need to take the bonus everybody is getting as input and increase all the salaries by that amount.
 # Output the resulting list.
 
 salaries = [2000, 1800, 3100, 4400, 1500]
-bonus = int(input())
+bonus = 20
 
 print(list(map(lambda x: x + bonus,salaries)))
+
+
+"-------------------------------------------------------------------------------------------------------------------------------"
+
+# The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not.
+# syntax:
+# filter(function, sequence)
+
+# Funções para criar a condição de aceitar apenas vogais
+def fun(variable):
+    letters = ['a', 'e', 'i', 'o', 'u']
+    if (variable in letters):
+        return True
+    else:
+        return False
+  
+  
+# sequence
+sequence = ['g', 'e', 'a', 'j', 'k', 's', 'p', 'r']
+  
+# using filter function, enviando como parametros a função e a sequencia que queremos testar
+filtered = filter(fun, sequence)
+
+# Printando as letrais que são vogais na sequencia  
+print('The filtered letters are:')
+for s in filtered:
+    print(s)
+
+
+numbers = [-2, -1, 0, 1, 2]
+
+def numeros_positivos(x):
+    positivos = []
+    for i in x: 
+        if i > 0:
+            positivos.append(i)      
+    return positivos 
+
+print("Com função ",numeros_positivos(numbers))
+
+
+# Utilizando filter fica mais simples, veremos:
+numbers = [-2, -1, 0, 1, 2]
+
+# Using a lambda function with filter
+positive_numbers = filter(lambda n: n > 0, numbers)
+print("Com filter e lambda", list(positive_numbers))
+
+
