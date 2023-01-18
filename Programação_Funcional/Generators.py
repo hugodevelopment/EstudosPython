@@ -2,6 +2,8 @@
 # If the body of a def contains yield, the function automatically becomes a generator function. 
 
 # Vamos fazer um função regressiva que diminuindo a de 1 em  1
+import time 
+
 def countdown():
     i = int(input("escolha um numero"))
     while i > 0:
@@ -26,4 +28,14 @@ l = lista_100()
 for v in l:
     print(v)
  
+
+# Fazendo com gerador
+
+def lista_100v2():
+    for i in range(100):
+        yield i     
+
+
+for iterador in lista_100v2():
+    print(iterador)
  
