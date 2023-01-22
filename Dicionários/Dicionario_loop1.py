@@ -61,14 +61,16 @@ def cadastro(nomes):
 # print(amigos2)
 
 "------------------------------------------------------------------------------------------------------------------------"
+cont_palavra = {}
+def count_letter(x):
+    if i not in cont_palavra:
+        cont_palavra[x]= 1
+    else:
+        cont_palavra[x] += 1     
 
 palavra = "Google"
-cont_palavra = {}
 for i in palavra:
-    if i not in cont_palavra:
-        cont_palavra[i]= 1
-    else:
-        cont_palavra[i] += 1  
+   count_letter(i)
 print(cont_palavra)          
 
 # # Utilizando o metodo uptaded
