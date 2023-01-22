@@ -62,7 +62,14 @@ def cadastro(nomes):
 
 "------------------------------------------------------------------------------------------------------------------------"
 
-palavra = input()
+palavra = "Google"
+cont_palavra = {}
+for i in palavra:
+    if i not in cont_palavra:
+        cont_palavra[i]= 1
+    else:
+        cont_palavra[i] += 1  
+print(cont_palavra)          
 
 # # Utilizando o metodo uptaded
 # dicio = {"naruto": 1, "Luffy":2}
@@ -73,16 +80,17 @@ palavra = input()
 # dicio.update(dicio2)
 # # print(dicio)
 
+# Treinando iteração com dicionarios: Minha ideia é iterar automaticamente dicionarios para adicionar valores
 
-dicio = {}
-def cadastro_dicio(x,y):
-    dicio[x] = y
-    print(dicio)
+# dicio = {}
+# def cadastro_dicio(x,y):
+#     dicio[x] = y
+#     print(dicio)
 
 
-for i in range(2):
-    nome = input("nome ")
-    nota = input("nota ")
-    cadastro_dicio(nome,nota)
-print(dicio)    
+# for i in range(2):
+#     nome = input("nome ")
+#     nota = input("nota ")
+#     cadastro_dicio(nome,nota)
+# print(dicio)    
 
