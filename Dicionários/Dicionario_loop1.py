@@ -18,39 +18,71 @@ def cadastro(nomes):
     
 
 # Neste for eu preencho a lista com dos nome que eu queira
-amigos1 = {}
-for i in range(2):
-    nome = input("insira o nome: ")
-    # Após o usuário escolher o nome, é chamada a função cadastro para adicionar na lista
-    cadastro(nome)
-    # Preencho um dicionario novo, ou até mesmo o antigo
-    amigos1[nomes1[i]] = idade[i]
-#printando a lista e os dicionários 
-print(nomes1)
-print(amigos1) 
-
+# amigos1 = {}
+# count = 0
+# for i in range(2):
+#     nome = input("insira o nome: ")
+#     # Após o usuário escolher o nome, é chamada a função cadastro para adicionar na lista
+#     cadastro(nome)
+#     # Preencho um dicionario novo com a chave sendo os novos nomes e os valores a lista idade, ou até mesmo o antigo
+#     amigos1[nomes1[i]] = idade[i]
+# #printando a lista e os dicionários 
+# print(nomes1)
+# print(amigos1)
 
 "------------------------------------------------------------------------------------------------------------------------"
-# Utilizando o metodo uptaded
 
-dicio = {"naruto": 1, "Luffy":2}
-print(dicio)
+# amigos2 = {}
+# pontos = 0
+# i = 0
+# while i <= 2:
+#     nome = input("insira um nome ")
+#     cadastro(nome)
+#     pontos += 5
+#     amigos2[nomes1[i]] = pontos
+#     i += 1
+# print()    
+# print(amigos2)    
 
-dicio2 = {"sasuke": 4, "Zoro":3}
+"------------------------------------------------------------------------------------------------------------------------"
+# amigos2 = {}
+# i = 0
+# while i <= 2:
+#     nome = input("insira um nome ")
+#     cadastro(nome)
+#     print(nomes1)
+#     pontos =  1
+#     if nome in amigos2:
+#         amigos2[nomes1[i]]+=1 
+#     else:    
+#         amigos2[nomes1[i]] = pontos
+#     i += 1
+# print()    
+# print(amigos2)
 
-dicio.update(dicio2)
-print(dicio)
+"------------------------------------------------------------------------------------------------------------------------"
+
+palavra = input()
+
+# # Utilizando o metodo uptaded
+# dicio = {"naruto": 1, "Luffy":2}
+# # print(dicio)
+
+# dicio2 = {"sasuke": 4, "Zoro":3}
+
+# dicio.update(dicio2)
+# # print(dicio)
 
 
-# dicio = {}
-# def cadastro_dicio(x,y):
-#     dicio[x[i]] = y[i]
-#     print(dicio)
+dicio = {}
+def cadastro_dicio(x,y):
+    dicio[x] = y
+    print(dicio)
 
 
-# for i in range(2):
-#     nome = input("nome ")
-#     nota = input("nota ")
-#     cadastro_dicio(nome,nota)
-# print(dicio)    
+for i in range(2):
+    nome = input("nome ")
+    nota = input("nota ")
+    cadastro_dicio(nome,nota)
+print(dicio)    
 

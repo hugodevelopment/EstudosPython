@@ -34,7 +34,6 @@ print("com lambda ", calcular_imposto(1000))
 
 # Aqui criamos uma lista onde para cada iteração a função lambda é chamada, neste cado i se torna x em cada iteração
 nova_lista = [lambda i = x: i * 0.5  for x in range(50,60)]
-imposto_lista = []
 for imposto in nova_lista:
     print(imposto())
  
