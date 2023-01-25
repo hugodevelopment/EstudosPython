@@ -15,7 +15,6 @@ print(a - b)
 
 
 # 3 Fill in the blanks to create a list of numbers multiplied by 10 in the range of 5 to 9.
-
 lista = [i *10  for i in range(5,9)]
 print(lista)
 
@@ -33,15 +32,3 @@ print(contando_letras("hugoo", "o"))
 
 
 # Treinando iteração com dicionarios: Minha ideia é iterar automaticamente dicionarios para adicionar valores
-
-# 1º Criando a função para receber nome e nota
-def dicio(keys, i, values):
-    alunos = {}
-    alunos[keys[i]] = values[i]
-    return alunos
-
-# 2º criando um for para adicionar os valores:
-for i in range(2):
-    nome = input("insira um nome:")
-    nota = input("Insira a nota")
-    
