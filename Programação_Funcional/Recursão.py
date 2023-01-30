@@ -16,18 +16,16 @@ def countdown(x):
 
 countdown(10)   
 
-# Ex2: Numeros pares
-def pares(x):
-    print(x)
-    if x == 2:
-        return x
-    # elif x % 2 ==0:
-    #     print("É par", x)
-    else:
-        print("São pares ")
-        pares(x - 2)
+# # Ex2: Numeros pares
+# def pares(x):
+#     print(x)
+#     if x == 2:
+#         return x
+#     else:
+#         print("São pares ")
+#         pares(x - 2)
 
-pares(10)
+# pares(10)
 
 # Ex 3: Fatorial de um numero
 
@@ -40,8 +38,9 @@ pares(10)
 print()
 
 def factorial(n):
-        return_value = 1
+        return_value = 1    
         for i in range(2, n + 1):
+            print("valor de i", i)
             return_value *= i
             print(return_value)
         return return_value
