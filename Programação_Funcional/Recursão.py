@@ -37,17 +37,50 @@ countdown(10)
 
 print()
 
+# # Função de fatorial sem recursão, apenas com for. Calcula de forma crescente
+# def factorial(n):
+#         return_value = 1
+#         # O for irá percorer de 2 até o número escolhido, nesse caso 4 
+#         for i in range(2, n + 1): 
+#             print("valor de i", i)
+#             return_value *= i # Aqui é feito o cálculo da recursão, recebendo cada valor e multiplciando por i
+#             print(return_value)
+#         return return_value
+# print(factorial(4))
 
-def factorial(n):
-        return_value = 1
-        # O for irá percorer de 2 até o número escolhido, nesse caso 4 
-        for i in range(2, n + 1): 
-            print("valor de i", i)
-            return_value *= i # Aqui é feito o cálculo da recursão, recebendo cada valor e multiplciando por i
-            print(return_value)
-        return return_value
+
+# Aqui podemos ver que é decrescente, do maior(4) para o menor(1)
+# def fatorial_recursão(n):
+#     print(n)
+#     # A função recebe n e verifica se é igual a 1
+#     if n == 1:
+#         return 1
+#     # Senão n não for 1, então faça a expressão abaixo 
+#     else:
+#         return n * fatorial_recursão(n-1)
+
+# print(fatorial_recursão(4))             
 
 
-print(factorial(4))
+# # Com lambda:
+# fatorial_lambda = lambda x: 1 if x == 1 else  x * fatorial_lambda(x-1)
+# print(fatorial_lambda(4))
 
+
+# Sequencia de fibonnaci com recursão
+def fibo(n):
+    if n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return fibo(n-1) + fibo(n-2)
+        
+def menu():
+    n = int(input('Exibir ate o termo (maior que 2): '))
+
+    for i in range(1,i+1):
+        print(fibo(i))
+    
+menu()
 
