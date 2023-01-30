@@ -37,11 +37,13 @@ countdown(10)
 
 print()
 
+
 def factorial(n):
-        return_value = 1    
-        for i in range(2, n + 1):
+        return_value = 1
+        # O for irá percorer de 2 até o número escolhido, nesse caso 4 
+        for i in range(2, n + 1): 
             print("valor de i", i)
-            return_value *= i
+            return_value *= i # Aqui é feito o cálculo da recursão, recebendo cada valor e multiplciando por i
             print(return_value)
         return return_value
 
