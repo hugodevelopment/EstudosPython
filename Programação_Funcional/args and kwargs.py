@@ -35,15 +35,13 @@ def total_fruits(**fruits):
 print(total_fruits(laranja =10, abacaxi=13, limão=5))       
 
 
-# def my_min(*x):
-#     menor = 500
-#     print(x)
-#     for i in x:
-#         print(i)
-#         if i < menor:
-#             menor = i
-#             return menor
-#         else:
-#             return i
+def my_min(*x):
+    menor = 500
+    print(x)
+    for i in x:
+        if i < menor:
+            menor = i
+    return menor
 
-# print(my_min(8, 13, 4, 42, 120, 7))
+
+print(my_min(8, 13, 4, 42, 120, 7))
