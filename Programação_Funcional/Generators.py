@@ -30,7 +30,6 @@ for v in l:
  
 
 # Fazendo com gerador
-
 def lista_100v2():
     for i in range(100):
         yield i     
