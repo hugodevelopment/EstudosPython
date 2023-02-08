@@ -41,10 +41,8 @@ b = {5,7,1}
 print("Interseção dos conjuntos ", a & b)
 
 # The difference - between two sets A and B include elements of set A that are not present on set B.
-
 a = {3,5,7}
 b = {2,5,3}
-
 print("diferença dos conjuntos ", a - b)
 
 # The symmetric difference between two sets A and B includes all elements of A and B without the common elements.
