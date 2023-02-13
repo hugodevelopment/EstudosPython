@@ -20,7 +20,7 @@ def power(x, y):
     # Se y == 0 a função se torna 1
     return 1
   else:
-    # O retorno sempre é chamado enquanto y == 0
+    # O retorno sempre é chamado enquanto y != 0
     return x * power(x, y-1)
 		
 print(power(2, 3))
@@ -28,34 +28,31 @@ print(power(2, 3))
 
 def func(**kwargs):
   print(kwargs["a"])
-
 func(a = 0, zero = 8)
 
 
-# nome = "Hello"
-# print(nome[:-2])
+nome = "Hello"
 
-# i = 0
-# j = len(nome) - 1
-# while i < len(nome):
-#     print(nome[j])
-#     i +=1 
-#     j -= 1
-
-
-
+# Aqui fiz sem recursão
+i = 0
+# A variavel j vai ler a palavra de trás para frente, lembrando que len de nome é 5, mas vai de 0 a 4 
+j = len(nome) - 1
+while i < len(nome):
+    print(nome[j])
+    i +=1 
+    # le a palavra de forma regressiva
+    j -= 1
 
 
 def spell(txt):
     #your code goes here
     if len(txt) == 0:
-        return 
+        return txt
     else:
+        # Aqui a ultima letra da palavra é printada quando utilizamos o -1, sendo o, l,l,e, H
         print(txt[-1])
+        # Após isso a função é aplicada novamente, então começa com Hello, dps Hell, Hel, He, H
         return spell(txt[:-1])
-         
-
 txt = "Hello"
 spell(txt)    
     
-
