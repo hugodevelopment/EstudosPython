@@ -16,7 +16,7 @@ class Pessoa:
             print(f'{self.nome}, já está comendo')
             return
         print(f'{self.nome}, Está comendo o ' , f'{voce}')
-        self.comendo = True 
+        # self.comendo = True 
 
 
     def parar_de_comer(self):
