@@ -10,13 +10,22 @@ class Pessoa:
         self.comendo = comendo
         self.falando = falando
 
-    def comer(self, voce):
+    def comer(self,voce):
         if self.comendo:
             print("ta no if ")
             print(f'{self.nome}, já está comendo')
             return
         print(f'{self.nome}, Está comendo o ' , f'{voce}')
         self.comendo = True 
+
+
+    def parar_de_comer(self):
+        if self.comendo == True:
+            print("Vou parar de comer ")
+        else:        
+            print("Termimando...")
+        self.comendo = False    
+
 
     def falar(self,voce):
         if self.falando:
@@ -25,9 +34,4 @@ class Pessoa:
         print(f'{self.nome}, esta falando com', f'{voce}') 
         self.falando = True   
 
-    def parar_de_comer(self):
-        if self.comendo == True:
-            print("Vou parar de comer ")
-        else:        
-            print("Termimando...")
-        self.comendo = False
+    
