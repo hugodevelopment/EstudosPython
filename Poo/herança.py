@@ -5,6 +5,7 @@
 
 # Exemplo, vou criar uma classe dragonball, onde os demais persnagens irão herdar atributos básicos.
 
+# Essa é uma superclasse
 class DragonBall():
     def __init__ (self, nome, idade, nivel_poder,raça,mestre):
         self.nome = nome
@@ -13,6 +14,7 @@ class DragonBall():
         self.raça = raça
         self.mestre = mestre
 
+# Essa é uma subclasse que herda atributos da classe Dragobnaball
 class Ataque(DragonBall):
     def ataque(self,golpe):
         print("Meu golpe é ", golpe) 
