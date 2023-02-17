@@ -21,10 +21,12 @@ pessoa1 = Pessoa("Hugo", 26)
 pessoa2 = Pessoa("Marcio",25)
 # pessoa1.comer("Maça")
 pessoa1.parar_de_comer()
+
 pessoa1.falar()
 pessoa1.comer("Pera")
 pessoa2.comer("Uva")
 pessoa1.falar()
+
 pessoa1.parar_de_comer()
 pessoa1.falar()
 pessoa1.parar_falar()
