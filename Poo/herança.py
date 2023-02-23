@@ -17,7 +17,7 @@ class DragonBall():
 # Essa é uma subclasse que herda atributos da classe Dragobnaball
 class Ataque(DragonBall):
     def ataque(self,golpe):
-        print("Meu golpe é ", golpe) 
+        print(self.nome,"Meu golpe é ",golpe) 
 
 Personagem1 = Ataque("Goku", 15, 200, "Sayajin", "Kame")
 print(Personagem1.nome)
