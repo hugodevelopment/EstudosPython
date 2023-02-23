@@ -24,7 +24,10 @@ class retangulo(Shape):
 
 w = 10
 h = 20
-# Aqui instancia
+# Aqui instanciamos a classe retangulo que herda os parametros(w,h) e os metodos da classe Shape
 r = retangulo(w,h)
-r = r.area()
-
+# Chamando o metodo area da superclasse Shape
+r.area()
+# Chamando o metodo metade da superclasse Shape
+r.metade()
+r.perimeter()
