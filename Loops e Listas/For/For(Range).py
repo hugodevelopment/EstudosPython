@@ -37,6 +37,9 @@ list = [8, 23, 45]
 for index, i in enumerate(list):
     print(index, i)
 
+
+    
+
 # frase = "Hugo"
 # frase2 = ""
 # for i in frase:
