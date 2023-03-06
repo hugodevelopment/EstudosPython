@@ -5,6 +5,7 @@
 # 1. Inherit the Rectangle class from Shape.
 # 2. Define the perimeter() method in the Rectangle class, printing the perimeter of the rectangle.
 
+# superclasse que defini algumas operações
 class Shape:
     def __init__(self, w, h):
         self.width = w
@@ -17,6 +18,7 @@ class Shape:
         print((self.width + self.height)/2)
 
 
+# Criando o classe retangulo que herda os métodos da superclasse shape
 class retangulo(Shape):
     def perimeter(self):
         print(2*(self.width + self.height))
