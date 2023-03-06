@@ -28,3 +28,4 @@ print("soma de palavras", result)
 print("Soma convencional", num1 + num2)
 print("Soma com magic methods", num1.__add__(num2))
 print("Soma de palavras com magic methods", palavra1.__add__(palavra2))
+
