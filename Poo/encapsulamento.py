@@ -37,7 +37,7 @@ class funcionario:
         self.nome = nome
         self.cargo = cargo
         self.valor_hora_trabalhada = valor_hora_trabalhada
-        # Posso criar variaves mesmo fora do init
+        # Posso criar variaves mesmo fora do init(Revisar)
         self.__horas_trabalhadas = 0
         self.__salario  = 0
 
@@ -79,12 +79,16 @@ class Funcionario:
 
     def calcula_salario(self):
         self.__salario = self.__horas_trabalhadas * self.valor_hora_trabalhada
+        return self.__salario
 
 
+# revisar instanciar
 funcionario1 = Funcionario("Hugo", "estagio" , 3)
 # Agora não será mais possível alterar
-funcionario1.salario = 3000
-print(funcionario1.salario)       
+# funcionario1.salario = 3000
+# print(funcionario1.salario)       
 funcionario1.registra_hora_trabalhada()
-funcionario1.calcula_salario()
+salario = funcionario1.calcula_salario()
+print(salario)
+
       
