@@ -4,3 +4,14 @@ try:
 except ZeroDivisionError:
   print("Error")
 print("Finished")
+
+
+
+try:
+    variable = 10
+    print(variable / 2)
+    print(variable + "hello")
+except ZeroDivisionError:
+    print("Divided by zero")
+except (ValueError, TypeError):
+    print("Error occurred")
