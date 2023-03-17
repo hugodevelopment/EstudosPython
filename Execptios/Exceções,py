@@ -1,0 +1,72 @@
+try:
+  variable = 10
+  print (10 / 2)
+except ZeroDivisionError:
+  print("Error")
+print("Finished")
+
+print()
+
+try:
+    variable = 10
+    print(variable / 2)
+    print(variable + "hello")
+except ZeroDivisionError:
+    print("Divided by zero")
+except (ValueError, TypeError):
+    print("Error occurred")
+
+
+# def withdraw(amount):
+#    print(str(amount) + " withdrawn!")
+
+# #your code goes here
+# try:
+#    x = int(input())
+#    withdraw(x)
+# except ValueError:
+#    print("Please enter a number")    
+
+try:
+  print(1)
+except:
+  print(2)
+finally:
+  print(3)
+
+print()
+
+try:
+  meaning = 42
+  print(meaning / 0)
+  print("the meaning of life")
+except (ValueError, TypeError):
+  print("ValueError or TypeError occurred")
+except ZeroDivisionError:
+  print("Divided by zero")    
+
+
+
+menu = ['Fries', 'Sandwich', 'Cheeseburger', 'Coffee', 'Soda']
+#your code goes here
+
+opção = int(input("valor: "))
+try:
+    print(menu[opção])
+    print("ok")
+except IndexError:
+   print('Não está no menu') 
+except ValueError:
+   print("Valor não é inteiro") 
+
+print('ola')
+
+try:
+  print(1)
+  print(1 + "1" == 2)
+  print(2)
+except TypeError:
+  print(3)
+else:
+  print(4)
+
