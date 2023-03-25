@@ -1,0 +1,6 @@
+nome = input( 'qual é o seu nome')
+idade = input( 'qual é a sua idade')
+seu_objetivo = input(' qual é o seu objetivo na vida')
+print ("seu nome é", nome)
+print ("sua idade é" ,idade)
+print (seu_objetivo)

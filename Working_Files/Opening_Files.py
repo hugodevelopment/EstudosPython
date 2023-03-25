@@ -39,11 +39,22 @@
 # print(f.read())
 # f.close()
 
-# string = 'Game of Thrones'
-# list = [i.split()[0][0] for i in string]
+string = 'Naruto e Sasuke'
+j=0
+new_word = ""
+while j < 3:
+   word = string.split()
+   new_word += word[j][0]
+   j+=1
+print(new_word)
+
+# print(j)   
+# print(word[j][0])
+# list = [string.split('-')[0][0] for i in string]
 # print(list)
 
 l = ['element1\t0238.94', 'element2\t2.3904', 'element3\t0139847']
 list = [i.split('\t', 1)[0][0] for i in l]
-
+print("".join(list))
+print(list)
 
