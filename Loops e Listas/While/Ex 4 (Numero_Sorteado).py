@@ -6,8 +6,7 @@ import random
 numero_magico = random.randint(0,100)
 # print(numero_magico)
 
-
-
+# Utilizando o while true para o usuario escolher continuar jogando
 while True:
         numero_user = int(input("Digite um número para brincar"))
         if numero_user == numero_magico:
