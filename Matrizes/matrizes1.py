@@ -1,11 +1,10 @@
-linhas = [1]
+
 coluna = [[3,1], 
           [2,-1],]
-i = 0
-for i in range(len(linhas)):
+
+for i in range(1):
     for j in coluna:
-        i += 1
-        # print(i,coluna[1][1])
+        print(j)
         delta = coluna[0][0] * coluna[1][1] - coluna[1][0] * coluna[0][1]
     print(delta)  
     if delta != 0:
