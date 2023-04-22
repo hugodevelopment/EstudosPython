@@ -10,8 +10,10 @@ for i in range(len(linhas)):
     print(delta)  
     if delta != 0:
         print("A matriz tem inversa")
+        inversa = 1/delta 
+        print(inversa)     
     else:
-        print("A matriz não pode ter inversa já que ", delta, "é" , "0")  
+        print("A matriz não pode ter inversa já que ", delta, "é" , "0")
 
 
 # def criar_matriz(n_linhas, n_colunas):
