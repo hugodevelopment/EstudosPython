@@ -6,7 +6,7 @@ i = 0
 for i in range(len(linhas)):
     for j in coluna:
         i += 1
-        print(i,j)  
+        print(i,coluna[2][1])  
 
 
 # def criar_matriz(n_linhas, n_colunas):
