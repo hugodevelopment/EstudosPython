@@ -6,8 +6,12 @@ for i in range(len(linhas)):
     for j in coluna:
         i += 1
         # print(i,coluna[1][1])
-        delta = coluna[0][1] * coluna[1][1]
+        delta = coluna[0][0] * coluna[1][1] - coluna[1][0] * coluna[0][1]
     print(delta)  
+    if delta != 0:
+        print("A matriz tem inversa")
+    else:
+        print("A matriz não pode ter inversa já que ", delta, "é" , "0")  
 
 
 # def criar_matriz(n_linhas, n_colunas):
