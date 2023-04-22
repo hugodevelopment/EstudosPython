@@ -1,12 +1,13 @@
 linhas = [1]
-coluna = [[1,2,3], 
-          [2,3,5],
-          [3,8,9]]
+coluna = [[3,1], 
+          [2,-1],]
 i = 0
 for i in range(len(linhas)):
     for j in coluna:
         i += 1
-        print(i,coluna[2][1])  
+        # print(i,coluna[1][1])
+        delta = coluna[0][1] * coluna[1][1]
+    print(delta)  
 
 
 # def criar_matriz(n_linhas, n_colunas):
