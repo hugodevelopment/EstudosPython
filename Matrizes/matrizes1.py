@@ -1,6 +1,6 @@
 
 coluna = [[3,1], 
-          [2,-1],]
+          [2,-1]]
 
 for i in range(1):
     for j in coluna:
