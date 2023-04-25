@@ -10,6 +10,7 @@ for linha in range(2):
         matriz_inversa[0][0] = matriz[1][1]
         matriz_inversa[0][1] = -matriz[0][1]
         matriz_inversa[1][0] = -matriz[1][0]
+        matriz_inversa[1][1] = matriz[0][0]
         # count += 1
     
 for linha in range(2):
