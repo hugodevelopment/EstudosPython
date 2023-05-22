@@ -31,7 +31,15 @@ print(linha1)
 
 # podemos pegar todas as linhas utilizando list comprehession, indo de 0:3 para conter o ultimo elemento
 todas_linhas = [linha[0:3] for linha in Matriz]
-print(linha)
+print(todas_linhas)
+
+# Acessando a 1º coluna
+coluna1 = [coluna[0] for coluna in todas_linhas]
+print(coluna1)
+
+# ok
+submatriz = [linha[:2] for linha in Matriz[:2]]
+print(submatriz)
 
 
 
