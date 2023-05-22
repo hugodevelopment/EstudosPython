@@ -37,7 +37,7 @@ print(todas_linhas)
 coluna1 = [coluna[0] for coluna in todas_linhas]
 print(coluna1)
 
-# ok
+# ok d
 submatriz = [linha[:2] for linha in Matriz[:2]]
 print(submatriz)
 
