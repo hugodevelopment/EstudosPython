@@ -15,7 +15,7 @@ def conta_vogais(string):
     vogais = 'aeiou'
     for i in vogais:
         if i in string:
-            sao_vogais.append(i)
-    return sao_vogais
+            sao_vogais.append(i)       
+    return sao_vogais,len(sao_vogais)
 
 print(conta_vogais('olaaa'))
