@@ -19,6 +19,7 @@ def conta_palavras(frase):
 
     # Conta quantas vezes cada palavra aparece
     contagem = [0] * len(palavras_unicas)
+    print(contagem)
     for i in range(k):
         for palavra in palavras:
             if palavra == palavras_unicas[i]:

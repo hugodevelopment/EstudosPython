@@ -1,7 +1,10 @@
 def _mf_r(n, i, a):
+    print(i)
     if i <= n:
         a.append(fatorial(i))
         _mf_r(n, i + 1, a)
+    else:
+        print(i,"é Maior que ", n, "finalizando o fatorial")    
     return a
 
 def mf_r(n):
