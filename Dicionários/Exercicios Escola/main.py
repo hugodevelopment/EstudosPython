@@ -20,7 +20,6 @@ while True:
             alunos.update({dados_alunos: cadastroAlunos.cadAlunos()})
 
         # Estou tentando criar um menu
-
         print()
 
         print("--------- Bem Vindo ao Menu----------")
@@ -37,8 +36,7 @@ while True:
             if menu == "1":
                 nome = input("Nome: ")
                 print(pesquisa_aluno.procurar_alunos(alunos, nome))
-            
-
+    
             elif menu == "2":
                 print(alunos)
                 # escolha = input("Digite sair para finalizar: ")

@@ -22,7 +22,6 @@
 # print(inverter_palavra("mexico"))  
 
 
-
 def inverter_palavra(x):
     nova_palavra = ""
     for i in range(0, len(x) - 1, 2):
